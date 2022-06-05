@@ -154,6 +154,25 @@ public:
     double get_salary() {
         return salary;
     }
+}
+class Admin: public employee {
+//constractor
+Admin(int id , string name, string pass, double salary ): Employee( id, name ,pass ,salary){
+
+}
+// Dispaly methoud:
+void display(){
+cout <<"*** Information for admin : " << name << "*****"<<endl;
+cout<<"ID:\t"<< id <<endl;
+cout<<"salary:\t"<< salary <<endl;
+ 
+cout<<"*************"<<endl;
+
+}
+// distractor methoud
+~Admin(){
+}
+        
 };
 int main()
 {
